@@ -1,0 +1,28 @@
+{
+  "name": "army-forge",
+  "description": "Army forge web app",
+  "version": "0.0.1",
+  "scripts": {
+    "compile": "rescript",
+    "fmt": "rescript format",
+    "clean": "rescript clean -with-deps",
+    "watch": "rescript build -w",
+    "dev-server": "parcel public/index.html",
+    "build": "rescript && parcel build public/index.html"
+  },
+  "keywords": [
+    "rescript"
+  ],
+  "author": "army-forge",
+  "license": "MIT",
+  "dependencies": {
+    "@rescript/react": "^0.10.3",
+    "rescript": "*"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "parcel-bundler": "^1.12.5",
+    "postcss": "^7.0.36",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4"
+  }
+}
